@@ -1,3 +1,27 @@
+# What was done in this challenge:
+## Task 1:
+- Reporting Structure class added
+- Reporting Structure controller added
+- Reporting Structure service/implementation added w/ logic to calculate number of direct employees
+- 2 Unit Tests for Reporting Structure. 1 for multiple employees, 1 for no employees
+- Implemented recursive calculation to count all direct and indirect reports
+
+## Task 2:
+- Compensation class added with salary and effectiveDate fields
+- Compensation repository added for MongoDB persistence
+- Compensation service/implementation added with validation
+- Associated compensation with employees through direct object reference
+- REST endpoints created for:
+  - Creating new compensation records (POST /compensation)
+  - Reading compensation by employee ID (GET /compensation/{id})
+- Added error handling for invalid employee IDs and non-existent compensation records
+
+## Tested and Verified:
+- Ran/Compiled code successfully
+- All unit tests pass for both tasks
+- Used RESTer in Firefox to verify GET and POST endpoints
+- Manually verified data persistence between requests
+
 # Coding Challenge
 ## What's Provided
 A simple [Spring Boot](https://projects.spring.io/spring-boot/) web application has been created and bootstrapped with data. The application contains 
